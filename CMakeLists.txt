@@ -12,7 +12,7 @@ add_executable(macropad
 )
 
 target_include_directories(macropad PRIVATE ${CMAKE_CURRENT_LIST_DIR}/src)
-target_link_libraries(macropad pico_stdlib tinyusb_device)
+target_link_libraries(macropad pico_stdlib pico_unique_id tinyusb_device)
 
 pico_enable_stdio_usb(macropad 0)
 pico_enable_stdio_uart(macropad 1)
